@@ -1,0 +1,29 @@
+version: '3.1'
+services:
+  app:
+    container_name: servidor_apache_php
+    image: servidor_apache_php:latest
+    restart: always
+    environment:
+      DB_HOST: db
+      DB_USER: userphp
+      DB_PASS: 123456
+      DB_NAME: usuarios
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+  db:
+    container_name: servidor_mysql_mariadb
+    image: mariadb:11 
+    restart: always
+    environment:
+      MYSQL_DATABASE: usuarios
+      MYSQL_USER: userphp
+      MYSQL_PASSWORD: 123456
+      MYSQL_ROOT_PASSWORD: 123456
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./database/database.sql:/docker-entrypoint-initdb.d/database.sql
+volumes:
+    db_data:
