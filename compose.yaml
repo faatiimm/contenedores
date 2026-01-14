@@ -6,7 +6,7 @@ services:
     restart: always
     environment:
       DB_HOST: db
-      DB_USER: user1
+      DB_USER: userphp
       DB_PASS: 123456
       DB_NAME: usuarios
     ports:
@@ -15,14 +15,15 @@ services:
       - db
   db:
     container_name: servidor_mysql_mariadb
-    image: josedom24/mibd
+    image: mariadb:11 
     restart: always
     environment:
-      MARIADB_DATABASE: usuarios
-      MARIADB_USER: user1
-      MARIADB_PASSWORD: 123456
-      MARIADB_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: usuarios
+      MYSQL_USER: userphp
+      MYSQL_PASSWORD: 123456
+      MYSQL_ROOT_PASSWORD: 123456
     volumes:
-      - mariadb_data:/var/lib/mysql
+      - db_data:/var/lib/mysql
+      - ./database/database.sql:/docker-entrypoint-initdb.d/database.sql
 volumes:
-    mariadb_data:
+    db_data:
