@@ -21,7 +21,7 @@ services:
     container_name: servidor_mysql_mariadb
     restart: always
     environment:
-      MYSQL_DATABASE: usuarios
+      MYSQL_DATABASE: retrogaming_hub
       MYSQL_USER: userphp
       MYSQL_PASSWORD: 123456
       MYSQL_ROOT_PASSWORD: 123456
