@@ -1,21 +1,24 @@
-version: '3.1'
+version: "3.9"
+
 services:
   app:
+    build: .
     container_name: servidor_apache_php
-    image: servidor_apache_php:latest
-    restart: always
-    environment:
-      DB_HOST: db
-      DB_USER: userphp
-      DB_PASS: 123456
-      DB_NAME: usuarios
     ports:
       - "8080:80"
+    environment:
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_NAME: retrogaming_hub
+      DB_USER: userphp
+      DB_PASS: 123456
     depends_on:
       - db
+    volumes:
+      - .:/var/www/html:Z
   db:
+    image: docker.io/library/mysql:latest
     container_name: servidor_mysql_mariadb
-    image: mariadb:11 
     restart: always
     environment:
       MYSQL_DATABASE: usuarios
@@ -25,5 +28,7 @@ services:
     volumes:
       - db_data:/var/lib/mysql
       - ./database/database.sql:/docker-entrypoint-initdb.d/database.sql
+
 volumes:
-    db_data:
+  db_data:
+      
