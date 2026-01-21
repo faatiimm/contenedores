@@ -4,8 +4,8 @@ COPY frontend/ /var/www/html/
 COPY database/ /var/www/database/
 RUN chown -R www-data:www-data /var/www/html
 EXPOSE 80
-ENV DB_USER
-ENV DB_PASS
-ENV DB_NAME
-ENV DB_HOST
+ENV DB_USER=
+ENV DB_PASS=
+ENV DB_NAME=
+ENV DB_HOST=
 VOLUME /var/log/apache2
