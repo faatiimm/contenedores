@@ -1,1 +1,1 @@
-{"version":1,"defects":[],"times":{"ExampleTest::testTrueIsTrue":0.003}}
+{"version":1,"defects":[],"times":{"ExampleTest::testTrueIsTrue":0.005,"UtilsTest::testSumar":0.013,"UtilsTest::testEmailValido":0.001,"UtilsTest::testMayorDeEdad":0}}
