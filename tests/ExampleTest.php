@@ -6,6 +6,6 @@ class ExampleTest extends TestCase
 {
     public function testTrueIsTrue()
     {
-        $this->assertTrue(false);
+        $this->assertTrue(true);
     }
 }
