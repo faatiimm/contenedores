@@ -1,0 +1,12 @@
+{
+    "name": "fatima.makhloufi/contenedores-1",
+    "authors": [
+        {
+            "name": "Fatima",
+            "email": "fmakhloufimourdi@email.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    }
+}
