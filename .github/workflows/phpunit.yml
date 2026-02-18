@@ -8,19 +8,14 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    services:
-      mysql:
-        image: mysql:5.7
-        env:
-          MYSQL_ROOT_PASSWORD: root
-          MYSQL_DATABASE: testdb
-        ports:
-          - 3306:3306
-        options: >-
-          --health-cmd="mysqladmin ping"
-          --health-interval=10s
-          --health-timeout=5s
-          --health-retries=3
+services:
+  mysql:
+    image: mysql:5.7
+    env:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: testdb
+    ports:
+      - 3306:3306
 
     steps:
     - uses: actions/checkout@v3
@@ -37,4 +32,10 @@ jobs:
       run: sleep 15
 
     - name: Run PHPUnit
-      run: php vendor/bin/phpunit
+      env:
+        DB_HOST: 127.0.0.1
+        DB_USER: root
+        DB_PASS: root
+        DB_NAME: testdb
+        DB_PORT: 3306
+  run: php vendor/bin/phpunit tests
