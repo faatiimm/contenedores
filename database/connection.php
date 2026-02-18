@@ -1,7 +1,7 @@
 <?php
-$host = getenv("DB_HOST") ?: "db";
+$host = getenv("DB_HOST") ?: "127.0.0.1";
 $user = getenv("DB_USER") ?: "userphp";
-$pass = getenv("DB_PASS") ?: "123456";
+$pass = getenv("DB_PASS") ?: "1234567";
 $db   = getenv("DB_NAME");
 $port = getenv("DB_PORT");
 
