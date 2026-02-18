@@ -1,0 +1,545 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My PHP Sample: Referencia del archivo /home/runner/work/contenedores/contenedores/frontend/perfil.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My PHP Sample<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">Para probar GitHub Actions</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ca0386ec887ae6362f93b0d653b52e0c.html">frontend</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del archivo perfil.php</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ac96e9fad66eeae96383cdf87e8151e05" id="r_ac96e9fad66eeae96383cdf87e8151e05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="feed_8php.html#ae396108fa8ede9e34bbadeadbf4ef8bf">if</a>(!isset($_SESSION[&quot;id_usuario&quot;]))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#ac96e9fad66eeae96383cdf87e8151e05">$id_usuario</a> = $_SESSION[&quot;id_usuario&quot;]</td></tr>
+<tr class="separator:ac96e9fad66eeae96383cdf87e8151e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39a15306ce735ecaea919fe25ef08f2c" id="r_a39a15306ce735ecaea919fe25ef08f2c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#a39a15306ce735ecaea919fe25ef08f2c">$sql_user</a> = &quot;SELECT * FROM usuarios WHERE id_usuario = ?&quot;</td></tr>
+<tr class="separator:a39a15306ce735ecaea919fe25ef08f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af27a9140d5f2658693e7fd107f716449" id="r_af27a9140d5f2658693e7fd107f716449"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#af27a9140d5f2658693e7fd107f716449">$stmt</a> = mysqli_prepare($conn, $sql_user)</td></tr>
+<tr class="separator:af27a9140d5f2658693e7fd107f716449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa75019d9e65386d9a22ceb811888706f" id="r_aa75019d9e65386d9a22ceb811888706f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#aa75019d9e65386d9a22ceb811888706f">$usuario_db</a> = mysqli_fetch_assoc(mysqli_stmt_get_result($stmt))</td></tr>
+<tr class="separator:aa75019d9e65386d9a22ceb811888706f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9856e9c223a3eab00c4a1611c7702487" id="r_a9856e9c223a3eab00c4a1611c7702487"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#a9856e9c223a3eab00c4a1611c7702487">$sql_count_posts</a> = &quot;SELECT COUNT(*) as total FROM posts WHERE id_usuario = ?&quot;</td></tr>
+<tr class="separator:a9856e9c223a3eab00c4a1611c7702487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e66e840f9ab1da26ce2947c4aff1f3e" id="r_a6e66e840f9ab1da26ce2947c4aff1f3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#a6e66e840f9ab1da26ce2947c4aff1f3e">$stmt_p</a> = mysqli_prepare($conn, $sql_count_posts)</td></tr>
+<tr class="separator:a6e66e840f9ab1da26ce2947c4aff1f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad93c498f9e1c2e8940a27a2c53b9e909" id="r_ad93c498f9e1c2e8940a27a2c53b9e909"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#ad93c498f9e1c2e8940a27a2c53b9e909">$total_posts</a> = mysqli_fetch_assoc(mysqli_stmt_get_result($stmt_p))['total']</td></tr>
+<tr class="separator:ad93c498f9e1c2e8940a27a2c53b9e909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b0598d2247d9a8e88bd1584ae9d23ef" id="r_a1b0598d2247d9a8e88bd1584ae9d23ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#a1b0598d2247d9a8e88bd1584ae9d23ef">$sql_count_comm</a> = &quot;SELECT COUNT(*) as total FROM comentarios WHERE id_usuario = ?&quot;</td></tr>
+<tr class="separator:a1b0598d2247d9a8e88bd1584ae9d23ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cc74a14f362dea0f777b2e94e593a5b" id="r_a5cc74a14f362dea0f777b2e94e593a5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#a5cc74a14f362dea0f777b2e94e593a5b">$stmt_c</a> = mysqli_prepare($conn, $sql_count_comm)</td></tr>
+<tr class="separator:a5cc74a14f362dea0f777b2e94e593a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef0949e8267c2d68361b1441e193645" id="r_aaef0949e8267c2d68361b1441e193645"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#aaef0949e8267c2d68361b1441e193645">$total_comentarios</a> = mysqli_fetch_assoc(mysqli_stmt_get_result($stmt_c))['total']</td></tr>
+<tr class="separator:aaef0949e8267c2d68361b1441e193645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab801cf8e68931216c1a0b14763b017b3" id="r_ab801cf8e68931216c1a0b14763b017b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#ab801cf8e68931216c1a0b14763b017b3">$sql_mis_posts</a> = &quot;SELECT * FROM posts WHERE id_usuario = ? ORDER BY fecha_creacion DESC&quot;</td></tr>
+<tr class="separator:ab801cf8e68931216c1a0b14763b017b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab09194d4f8f3f3c89347f93d4f6cfba9" id="r_ab09194d4f8f3f3c89347f93d4f6cfba9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#ab09194d4f8f3f3c89347f93d4f6cfba9">$stmt_m</a> = mysqli_prepare($conn, $sql_mis_posts)</td></tr>
+<tr class="separator:ab09194d4f8f3f3c89347f93d4f6cfba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5285c7b5527930d3948a2cf7c14c0274" id="r_a5285c7b5527930d3948a2cf7c14c0274"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#a5285c7b5527930d3948a2cf7c14c0274">$mis_posts_res</a> = mysqli_stmt_get_result($stmt_m)</td></tr>
+<tr class="separator:a5285c7b5527930d3948a2cf7c14c0274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a012dd629d5f0d054d55d809aa87ecd33" id="r_a012dd629d5f0d054d55d809aa87ecd33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#a012dd629d5f0d054d55d809aa87ecd33">$ok</a> = $_GET['ok'] ?? null</td></tr>
+<tr class="separator:a012dd629d5f0d054d55d809aa87ecd33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfc00bd4a41804552c630950bf61a51f" id="r_acfc00bd4a41804552c630950bf61a51f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#acfc00bd4a41804552c630950bf61a51f">$err</a> = $_GET['err'] ?? null</td></tr>
+<tr class="separator:acfc00bd4a41804552c630950bf61a51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba15d4b069c4ad0b29b6ebbbb6806bd0" id="r_aba15d4b069c4ad0b29b6ebbbb6806bd0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#aba15d4b069c4ad0b29b6ebbbb6806bd0">endif</a></td></tr>
+<tr class="separator:aba15d4b069c4ad0b29b6ebbbb6806bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b05dae45f9e3f4c1fe86048550d2c5b" id="r_a1b05dae45f9e3f4c1fe86048550d2c5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#a1b05dae45f9e3f4c1fe86048550d2c5b">endwhile</a></td></tr>
+<tr class="separator:a1b05dae45f9e3f4c1fe86048550d2c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e01dcc96c43199448ee66f7c2ae8ea6" id="r_a8e01dcc96c43199448ee66f7c2ae8ea6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="registro_8php.html#a0a8896b1d062d203fbd5d97a692465bc">else</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#a8e01dcc96c43199448ee66f7c2ae8ea6">__pad0__</a></td></tr>
+<tr class="separator:a8e01dcc96c43199448ee66f7c2ae8ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5cd2155ac03abebb317ba2a8dfb5b46" id="r_aa5cd2155ac03abebb317ba2a8dfb5b46"><td class="memItemLeft" align="right" valign="top">padding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#aa5cd2155ac03abebb317ba2a8dfb5b46">__pad1__</a></td></tr>
+<tr class="separator:aa5cd2155ac03abebb317ba2a8dfb5b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a4f9c60f5fc724a2e9a4fdb35e9777" id="r_a92a4f9c60f5fc724a2e9a4fdb35e9777"><td class="memItemLeft" align="right" valign="top">meta text nuevo_post php btn btn primary btn small margin&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#a92a4f9c60f5fc724a2e9a4fdb35e9777">top</a></td></tr>
+<tr class="separator:a92a4f9c60f5fc724a2e9a4fdb35e9777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a903768e54cf78634eafaf9438b52f476" id="r_a903768e54cf78634eafaf9438b52f476"><td class="memItemLeft" align="right" valign="top">site footer container footer inner footer info block brand name&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#a903768e54cf78634eafaf9438b52f476">color</a></td></tr>
+<tr class="separator:a903768e54cf78634eafaf9438b52f476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3289685eae25fa8dcbd0f219c7e92b89" id="r_a3289685eae25fa8dcbd0f219c7e92b89"><td class="memItemLeft" align="right" valign="top">font&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#a3289685eae25fa8dcbd0f219c7e92b89">size</a></td></tr>
+<tr class="separator:a3289685eae25fa8dcbd0f219c7e92b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9034efd9266ed643f35aa86e8ca32ac2" id="r_a9034efd9266ed643f35aa86e8ca32ac2"><td class="memItemLeft" align="right" valign="top">margin&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#a9034efd9266ed643f35aa86e8ca32ac2">bottom</a></td></tr>
+<tr class="separator:a9034efd9266ed643f35aa86e8ca32ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1b1d44a8c4dbcaeff449be6b5e19935" id="r_ab1b1d44a8c4dbcaeff449be6b5e19935"><td class="memItemLeft" align="right" valign="top">max&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#ab1b1d44a8c4dbcaeff449be6b5e19935">width</a></td></tr>
+<tr class="separator:ab1b1d44a8c4dbcaeff449be6b5e19935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2dc0cdc8f54753edd0fb73fb977d0ea" id="r_aa2dc0cdc8f54753edd0fb73fb977d0ea"><td class="memItemLeft" align="right" valign="top">footer info block text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#aa2dc0cdc8f54753edd0fb73fb977d0ea">align</a></td></tr>
+<tr class="separator:aa2dc0cdc8f54753edd0fb73fb977d0ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a689a1d71dbaa1d461cc216e96f1287d5" id="r_a689a1d71dbaa1d461cc216e96f1287d5"><td class="memItemLeft" align="right" valign="top">font&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#a689a1d71dbaa1d461cc216e96f1287d5">family</a></td></tr>
+<tr class="separator:a689a1d71dbaa1d461cc216e96f1287d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bb1e25f197e486987d19ed347abccde" id="r_a0bb1e25f197e486987d19ed347abccde"><td class="memItemLeft" align="right" valign="top">opacity&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#a0bb1e25f197e486987d19ed347abccde">__pad2__</a></td></tr>
+<tr class="separator:a0bb1e25f197e486987d19ed347abccde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae579efcc03bd327169f5bab7e8b7635d" id="r_ae579efcc03bd327169f5bab7e8b7635d"><td class="memItemLeft" align="right" valign="top">letter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perfil_8php.html#ae579efcc03bd327169f5bab7e8b7635d">spacing</a></td></tr>
+<tr class="separator:ae579efcc03bd327169f5bab7e8b7635d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de variables</h2>
+<a id="acfc00bd4a41804552c630950bf61a51f" name="acfc00bd4a41804552c630950bf61a51f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfc00bd4a41804552c630950bf61a51f">&#9670;&#160;</a></span>$err</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$err = $_GET['err'] ?? null</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac96e9fad66eeae96383cdf87e8151e05" name="ac96e9fad66eeae96383cdf87e8151e05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac96e9fad66eeae96383cdf87e8151e05">&#9670;&#160;</a></span>$id_usuario</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="feed_8php.html#ae396108fa8ede9e34bbadeadbf4ef8bf">if</a> (!isset( $_SESSION[&quot;id_usuario&quot;])) $id_usuario = $_SESSION[&quot;id_usuario&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CONTROL DE ACCESO (SEGURIDAD) Si no existe una sesión activa, se redirige al login para proteger los datos privados. </p>
+
+</div>
+</div>
+<a id="a5285c7b5527930d3948a2cf7c14c0274" name="a5285c7b5527930d3948a2cf7c14c0274"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5285c7b5527930d3948a2cf7c14c0274">&#9670;&#160;</a></span>$mis_posts_res</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$mis_posts_res = mysqli_stmt_get_result($stmt_m)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a012dd629d5f0d054d55d809aa87ecd33" name="a012dd629d5f0d054d55d809aa87ecd33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a012dd629d5f0d054d55d809aa87ecd33">&#9670;&#160;</a></span>$ok</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$ok = $_GET['ok'] ?? null</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b0598d2247d9a8e88bd1584ae9d23ef" name="a1b0598d2247d9a8e88bd1584ae9d23ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b0598d2247d9a8e88bd1584ae9d23ef">&#9670;&#160;</a></span>$sql_count_comm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$sql_count_comm = &quot;SELECT COUNT(*) as total FROM comentarios WHERE id_usuario = ?&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9856e9c223a3eab00c4a1611c7702487" name="a9856e9c223a3eab00c4a1611c7702487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9856e9c223a3eab00c4a1611c7702487">&#9670;&#160;</a></span>$sql_count_posts</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$sql_count_posts = &quot;SELECT COUNT(*) as total FROM posts WHERE id_usuario = ?&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ESTADÍSTICAS EN TIEMPO REAL Conteo de registros vinculados al ID del usuario en las tablas 'posts' y 'comentarios'. </p>
+
+</div>
+</div>
+<a id="ab801cf8e68931216c1a0b14763b017b3" name="ab801cf8e68931216c1a0b14763b017b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab801cf8e68931216c1a0b14763b017b3">&#9670;&#160;</a></span>$sql_mis_posts</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$sql_mis_posts = &quot;SELECT * FROM posts WHERE id_usuario = ? ORDER BY fecha_creacion DESC&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>LISTADO DE ACTIVIDAD PROPIA Se recuperan los hilos creados por el usuario ordenados por fecha descendente. </p>
+
+</div>
+</div>
+<a id="a39a15306ce735ecaea919fe25ef08f2c" name="a39a15306ce735ecaea919fe25ef08f2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39a15306ce735ecaea919fe25ef08f2c">&#9670;&#160;</a></span>$sql_user</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$sql_user = &quot;SELECT * FROM usuarios WHERE id_usuario = ?&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RECUPERACIÓN DE DATOS DE USUARIO Consulta preparada para obtener la información actualizada del perfil. </p>
+
+</div>
+</div>
+<a id="af27a9140d5f2658693e7fd107f716449" name="af27a9140d5f2658693e7fd107f716449"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af27a9140d5f2658693e7fd107f716449">&#9670;&#160;</a></span>$stmt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$stmt = mysqli_prepare($conn, $sql_user)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5cc74a14f362dea0f777b2e94e593a5b" name="a5cc74a14f362dea0f777b2e94e593a5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cc74a14f362dea0f777b2e94e593a5b">&#9670;&#160;</a></span>$stmt_c</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$stmt_c = mysqli_prepare($conn, $sql_count_comm)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab09194d4f8f3f3c89347f93d4f6cfba9" name="ab09194d4f8f3f3c89347f93d4f6cfba9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab09194d4f8f3f3c89347f93d4f6cfba9">&#9670;&#160;</a></span>$stmt_m</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$stmt_m = mysqli_prepare($conn, $sql_mis_posts)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e66e840f9ab1da26ce2947c4aff1f3e" name="a6e66e840f9ab1da26ce2947c4aff1f3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e66e840f9ab1da26ce2947c4aff1f3e">&#9670;&#160;</a></span>$stmt_p</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$stmt_p = mysqli_prepare($conn, $sql_count_posts)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaef0949e8267c2d68361b1441e193645" name="aaef0949e8267c2d68361b1441e193645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaef0949e8267c2d68361b1441e193645">&#9670;&#160;</a></span>$total_comentarios</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$total_comentarios = mysqli_fetch_assoc(mysqli_stmt_get_result($stmt_c))['total']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad93c498f9e1c2e8940a27a2c53b9e909" name="ad93c498f9e1c2e8940a27a2c53b9e909"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad93c498f9e1c2e8940a27a2c53b9e909">&#9670;&#160;</a></span>$total_posts</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$total_posts = mysqli_fetch_assoc(mysqli_stmt_get_result($stmt_p))['total']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa75019d9e65386d9a22ceb811888706f" name="aa75019d9e65386d9a22ceb811888706f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa75019d9e65386d9a22ceb811888706f">&#9670;&#160;</a></span>$usuario_db</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$usuario_db = mysqli_fetch_assoc(mysqli_stmt_get_result($stmt))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e01dcc96c43199448ee66f7c2ae8ea6" name="a8e01dcc96c43199448ee66f7c2ae8ea6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e01dcc96c43199448ee66f7c2ae8ea6">&#9670;&#160;</a></span>__pad0__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="registro_8php.html#a0a8896b1d062d203fbd5d97a692465bc">else</a> __pad0__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa5cd2155ac03abebb317ba2a8dfb5b46" name="aa5cd2155ac03abebb317ba2a8dfb5b46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5cd2155ac03abebb317ba2a8dfb5b46">&#9670;&#160;</a></span>__pad1__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">padding __pad1__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0bb1e25f197e486987d19ed347abccde" name="a0bb1e25f197e486987d19ed347abccde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bb1e25f197e486987d19ed347abccde">&#9670;&#160;</a></span>__pad2__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">opacity __pad2__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2dc0cdc8f54753edd0fb73fb977d0ea" name="aa2dc0cdc8f54753edd0fb73fb977d0ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2dc0cdc8f54753edd0fb73fb977d0ea">&#9670;&#160;</a></span>align</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">footer info block text align</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9034efd9266ed643f35aa86e8ca32ac2" name="a9034efd9266ed643f35aa86e8ca32ac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9034efd9266ed643f35aa86e8ca32ac2">&#9670;&#160;</a></span>bottom</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">margin bottom</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a903768e54cf78634eafaf9438b52f476" name="a903768e54cf78634eafaf9438b52f476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a903768e54cf78634eafaf9438b52f476">&#9670;&#160;</a></span>color</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">site footer container footer inner footer info block brand name color</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba15d4b069c4ad0b29b6ebbbb6806bd0" name="aba15d4b069c4ad0b29b6ebbbb6806bd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba15d4b069c4ad0b29b6ebbbb6806bd0">&#9670;&#160;</a></span>endif</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="feed_8php.html#ae396108fa8ede9e34bbadeadbf4ef8bf">if</a> (isset( $_GET[ 'cambiar_pass'])) te pediremos tu contraseña actual&lt;/p&gt;&lt;div style=&quot;margin-top: 15px;&quot;&gt;&lt;a href=&quot;perfil.php?cambiar_pass=1&quot; class=&quot;btn btn-ghost&quot; style=&quot;border-color: var(--accent2); color: var(--accent2);&quot;&gt; 🔑 Cambiar Contraseña&lt;/a&gt;&lt;/div&gt; endif</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b05dae45f9e3f4c1fe86048550d2c5b" name="a1b05dae45f9e3f4c1fe86048550d2c5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b05dae45f9e3f4c1fe86048550d2c5b">&#9670;&#160;</a></span>endwhile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">endwhile</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a689a1d71dbaa1d461cc216e96f1287d5" name="a689a1d71dbaa1d461cc216e96f1287d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a689a1d71dbaa1d461cc216e96f1287d5">&#9670;&#160;</a></span>family</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">font family</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3289685eae25fa8dcbd0f219c7e92b89" name="a3289685eae25fa8dcbd0f219c7e92b89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3289685eae25fa8dcbd0f219c7e92b89">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">meta text font size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae579efcc03bd327169f5bab7e8b7635d" name="ae579efcc03bd327169f5bab7e8b7635d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae579efcc03bd327169f5bab7e8b7635d">&#9670;&#160;</a></span>spacing</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">letter spacing</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a92a4f9c60f5fc724a2e9a4fdb35e9777" name="a92a4f9c60f5fc724a2e9a4fdb35e9777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92a4f9c60f5fc724a2e9a4fdb35e9777">&#9670;&#160;</a></span>top</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">margin top</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1b1d44a8c4dbcaeff449be6b5e19935" name="ab1b1d44a8c4dbcaeff449be6b5e19935"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1b1d44a8c4dbcaeff449be6b5e19935">&#9670;&#160;</a></span>width</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">max width</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
