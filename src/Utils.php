@@ -4,7 +4,7 @@ class Utils
 {
     public static function sumar($a, $b)
     {
-        return $a * $b;
+        return $a + $b;
     }
 
     public static function esEmailValido($email)
