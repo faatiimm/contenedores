@@ -1,7 +1,7 @@
 <?php
 $host = getenv("DB_HOST") ?: "db";
-$user = "root";
-$pass = "badpasswd";
+$user = getenv("DB_USER") ?: "userphp";
+$pass = getenv("DB_PASS") ?: "123456";
 $db   = getenv("DB_NAME");
 $port = getenv("DB_PORT");
 
